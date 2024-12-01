@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(21%2c 67%2c 96%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c412.008C99.214%2c410.851%2c197.53%2c488.004%2c289.158%2c449.938C382.589%2c411.123%2c446.823%2c313.628%2c472.418%2c215.746C496.6%2c123.267%2c437.609%2c33.643%2c422.701%2c-60.775C408.064%2c-153.479%2c450.592%2c-266.417%2c385.598%2c-334.122C320.24%2c-402.205%2c202.935%2c-356.164%2c112.674%2c-383.731C20.939%2c-411.748%2c-49.84%2c-496.486%2c-145.758%2c-496.407C-253.748%2c-496.318%2c-365.131%2c-458.795%2c-442.319%2c-383.272C-521.866%2c-305.441%2c-559.049%2c-192.677%2c-569.432%2c-81.872C-579.52%2c25.78%2c-548.912%2c131.934%2c-499.615%2c228.166C-451.876%2c321.357%2c-391.789%2c420.573%2c-293.523%2c456.731C-198.721%2c491.615%2c-101.009%2c413.186%2c0%2c412.008' fill='%2311374f'%3e%3c/path%3e%3cpath d='M1440 901.4549999999999C1504.511 894.346 1568.118 879.309 1621.29 842.0930000000001 1673.189 805.768 1707.305 751.689 1735.22 694.823 1763.804 636.597 1792.3 574.87 1784.055 510.532 1775.758 445.79 1727.194 396.98199999999997 1690.164 343.23199999999997 1648.29 282.451 1616.688 212.459 1553.002 175.152 1480.262 132.541 1387.466 85.37799999999999 1311.16 121.21300000000002 1233.0819999999999 157.88 1242.062 274.814 1191.686 344.83500000000004 1147.88 405.724 1045.555 427.54200000000003 1037.15 502.079 1028.701 577.005 1118.566 623.97 1152.625 691.24 1184.7640000000001 754.718 1173.6480000000001 843.088 1231.074 885.095 1288.62 927.19 1369.13 909.265 1440 901.4549999999999' fill='%23194f71'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+}
+
+.down {
+  display: none;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.err-message {
+  color: red;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  display: none;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:hover {
+  outline: none;
+  border-color: rgba(0, 48, 73, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+}
+
+.my-dropdown {
+  display: block;
+  height: 40px;
+  margin-left: 40px;
+  padding: 0 1rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+  color: #636369;
+  transition: 0.3s ease;
+}
+
+.my-dropdown:focus,
+.my-dropdown:hover {
+  outline: none;
+  border-color: rgba(0, 48, 73, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+}
+
+/* Filter Button */
+.sort-btn {
+  height: 40px;
+  margin-left: 40px;  
+  padding: 0 1rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+  color: #000;
+}
+
+.sort-btn i {
+  padding-left: 10px;
+}
+
+.sort-btn:hover {
+  background-color: #adade6;
+}
+.card {
+  position: relative;
+  top: 0px;
+  height: 280px;
+  background-color: #f2f8f9;
+  border-radius: 10px;
+  padding: 32px 34px;
+  margin: 12px;
+  border: 1px solid #f2f8f9;
+}
+
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.card .grade {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.card .direction {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.card .age {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #be2a27;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #ec0d0d;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    display: inline-block;
+  }
+
+  .input, .my-dropdown, .sort-btn {
+    margin-left: 40px;
+  }
+
+  .my-dropdown, .sort-btn {
+    margin-top: 40px;
+  }
+
+  .icon {
+    left: 50px;
+    top: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+}
